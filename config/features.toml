@@ -109,7 +109,7 @@ id = "cheat_csd"
 name = "作弊CSD"
 bit = 2
 required = true     # 必选
-skip = false
+skip = true                                                # 跳过，不生成包含此功能的组合（作弊CSD已移除）
 depends_on = []
 conflicts_with = []
 

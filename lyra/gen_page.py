@@ -148,7 +148,7 @@ class DownloadPageGenerator:
         if combination.is_polyfill:
             # 移除原有的 (兼容版) 后缀（如果有）
             display_name = display_name.replace("(兼容版)", "").strip()
-            display_name = f"{display_name}+CSD(兼容版)"
+            display_name = f"{display_name}(兼容版)"
         elif combination.is_recommended:
             display_name = f"***{display_name}(推荐)***"
 
@@ -287,9 +287,9 @@ class DownloadPageGenerator:
             "",
             "## 下载",
             "",
-            "> 内置的 `汉化/作弊/CSD` mod 已可以在 ModLoader 处自行选择禁用或者启用，不需要特定 mod 的需自行禁用",
+            "> 内置的 `汉化` mod 已可以在 ModLoader 处自行选择禁用或者启用，不需要特定 mod 的需自行禁用",
             "",
-            "> 基础即为只包含 `作弊+CSD` 的版本，其他版本均在基础上添加了对应功能",
+            "> 基础即为只包含 `BESC` 的版本，其他版本均在基础上添加了对应功能",
             "",
             "",
         ]

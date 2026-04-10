@@ -130,13 +130,3 @@ replace_slot = 0                                  # 替换原始 ModLoader (slot
 
 [[base_mods]]
 key = "i18n"
-
-[[base_mods]]
-key = "cheat"
-feature_id = "cheat_csd"
-github_repo = "DoL-Lyra/Cheat"
-
-[[base_mods]]
-key = "csd"
-feature_id = "cheat_csd"
-github_repo = "DoL-Lyra/CombatStatusDisplay"

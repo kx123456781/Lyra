@@ -162,9 +162,8 @@ class CombinationCalculator:
 
     def _get_display_name(self, code: int) -> str:
         """获取组合的显示名称"""
-        # 仅包含作弊CSD的基础版本
-        cheat_feature = self._feature_map.get("cheat_csd")
-        if cheat_feature and code == cheat_feature.bit:
+        # 基础版本（仅BESC，无作弊CSD）
+        if code == 1:
             return "基础"
 
         parts = []
@@ -174,8 +173,7 @@ class CombinationCalculator:
 
         for feature in sorted_features:
             if self._has_bit(code, feature.bit):
-                # 跳过作弊CSD的显示（它始终存在）
-                if feature.required:
+                if feature.skip:
                     continue
                 if feature.name:
                     parts.append(feature.name)
